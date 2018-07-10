@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Dec 17 08:43:53 2017
+# Process ID: 708
+# Log file: F:/Project/vivado.log
+# Journal file: F:/Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Project/Project.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files F:/Project/Project.srcs/sources_1/new/Memory.v
+file delete -force F:/Project/Project.srcs/sources_1/new/Memory.v
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+    while executing
+"send_msg_id USF-XSim-003 INFO "XSim::Elaborate design""
+    (procedure "tclapp::xilinx::xsim::elaborate" line 9)
+    invoked from within
+"tclapp::xilinx::xsim::elaborate { -simset sim_1 -mode behavioral -run_dir F:/Project/Project.sim/sim_1/behav -int_os_type 64 -int_debug_mode 0}"
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/Project.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6ca467dfb72245c9a18895024d3b0067 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RandomTestBench_behav xil_defaultlib.RandomTestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <RandomCodeGenerator> not found while processing module instance <dut> [F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'F:/Project/Project.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/Project/Project.sim/sim_1/behav/elaborate.log' file for more information.
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Comparator.sv" into library work [F:/Project/Project.srcs/sources_1/new/Comparator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv" into library work [F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Main.sv" into library work [F:/Project/Project.srcs/sources_1/new/Main.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/OnOff.sv" into library work [F:/Project/Project.srcs/sources_1/new/OnOff.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library work [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "endmodule". [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:35]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv" into library work [F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv:1]
+[Sun Dec 17 09:01:17 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Comparator.sv" into library work [F:/Project/Project.srcs/sources_1/new/Comparator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv" into library work [F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Main.sv" into library work [F:/Project/Project.srcs/sources_1/new/Main.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/OnOff.sv" into library work [F:/Project/Project.srcs/sources_1/new/OnOff.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library work [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv" into library work [F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv:1]
+[Sun Dec 17 09:02:15 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Comparator.sv" into library work [F:/Project/Project.srcs/sources_1/new/Comparator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv" into library work [F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Main.sv" into library work [F:/Project/Project.srcs/sources_1/new/Main.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/OnOff.sv" into library work [F:/Project/Project.srcs/sources_1/new/OnOff.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library work [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv" into library work [F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv:1]
+[Sun Dec 17 09:03:27 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Comparator.sv" into library work [F:/Project/Project.srcs/sources_1/new/Comparator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv" into library work [F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Main.sv" into library work [F:/Project/Project.srcs/sources_1/new/Main.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/OnOff.sv" into library work [F:/Project/Project.srcs/sources_1/new/OnOff.sv:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [F:/Project/Project.srcs/sources_1/new/OnOff.sv:10]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [F:/Project/Project.srcs/sources_1/new/OnOff.sv:14]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [F:/Project/Project.srcs/sources_1/new/OnOff.sv:18]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [F:/Project/Project.srcs/sources_1/new/OnOff.sv:22]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library work [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv" into library work [F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv:1]
+[Sun Dec 17 09:04:46 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+reset_run synth_2
+launch_runs synth_2
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Comparator.sv" into library work [F:/Project/Project.srcs/sources_1/new/Comparator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv" into library work [F:/Project/Project.srcs/sources_1/new/Increment_Decrement.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/Main.sv" into library work [F:/Project/Project.srcs/sources_1/new/Main.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/OnOff.sv" into library work [F:/Project/Project.srcs/sources_1/new/OnOff.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library work [F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/SevSeg_4digit.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv" into library work [F:/Project/Project.srcs/sources_1/new/UserKeyboardMap.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/keypad4X4.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/stepmotor.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv" into library work [D:/Users/TEMP/Desktop/Project_files/Ready_Modules/steppermotor_wrapper.sv:1]
+[Sun Dec 17 09:05:15 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomCodeGenerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/Project.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6ca467dfb72245c9a18895024d3b0067 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RandomTestBench_behav xil_defaultlib.RandomTestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RandomCodeGenerator
+Compiling module xil_defaultlib.RandomTestBench
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot RandomTestBench_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 17 09:06:36 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 63.934 ; gain = 0.434
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 09:06:36 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 761.652 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/Project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RandomTestBench_behav -key {Behavioral:sim_1:Functional:RandomTestBench} -tclbatch {RandomTestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source RandomTestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RandomTestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 775.578 ; gain = 13.926
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 791.762 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomCodeGenerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/Project.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6ca467dfb72245c9a18895024d3b0067 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RandomTestBench_behav xil_defaultlib.RandomTestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RandomCodeGenerator
+Compiling module xil_defaultlib.RandomTestBench
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot RandomTestBench_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 17 09:07:26 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 63.742 ; gain = 0.020
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 09:07:26 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 791.762 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/Project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RandomTestBench_behav -key {Behavioral:sim_1:Functional:RandomTestBench} -tclbatch {RandomTestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source RandomTestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RandomTestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 791.762 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 791.762 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomCodeGenerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/Project.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6ca467dfb72245c9a18895024d3b0067 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RandomTestBench_behav xil_defaultlib.RandomTestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RandomCodeGenerator
+Compiling module xil_defaultlib.RandomTestBench
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot RandomTestBench_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 17 09:09:01 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 63.984 ; gain = 0.434
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 09:09:01 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 791.762 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/Project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RandomTestBench_behav -key {Behavioral:sim_1:Functional:RandomTestBench} -tclbatch {RandomTestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source RandomTestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RandomTestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 791.762 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 791.762 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'RandomTestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'F:/Project/Project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj RandomTestBench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sources_1/new/RandomCodeGenerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomCodeGenerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/Project.srcs/sim_1/new/RandomTestBench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RandomTestBench
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/Project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/Project.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 6ca467dfb72245c9a18895024d3b0067 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RandomTestBench_behav xil_defaultlib.RandomTestBench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RandomCodeGenerator
+Compiling module xil_defaultlib.RandomTestBench
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot RandomTestBench_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Project/Project.sim/sim_1/behav/xsim.dir/RandomTestBench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Dec 17 09:10:52 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 64.219 ; gain = 0.016
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 09:10:52 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 791.762 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/Project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RandomTestBench_behav -key {Behavioral:sim_1:Functional:RandomTestBench} -tclbatch {RandomTestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source RandomTestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RandomTestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 791.762 ; gain = 0.000
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/Project/Project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/Project/Project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Dec 17 09:41:19 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 64.230 ; gain = 0.434
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 17 09:41:19 2017...
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A57F56A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A57F56A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A57F56A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+[Sun Dec 17 09:41:33 2017] Launched synth_2...
+Run output will be captured here: F:/Project/Project.runs/synth_2/runme.log
+[Sun Dec 17 09:41:33 2017] Launched impl_2...
+Run output will be captured here: F:/Project/Project.runs/impl_2/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 801.508 ; gain = 4.633
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Project/Project.runs/impl_2/Main.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {F:/Project/Project.runs/impl_2/Main.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_sim

@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../Project.srcs/sources_1/new/RandomCodeGenerator.sv"
+sv xil_defaultlib  "../../../Project.srcs/sim_1/new/RandomTestBench.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
